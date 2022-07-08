@@ -1,0 +1,115 @@
+/* Header */
+
+#tmpl-header .tmpl-headerNav_list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#tmpl-header {
+    width: 100% !important;
+    max-width: none !important;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 999999;
+    transition: 0.64s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-property: transform;
+}
+
+
+#tmpl-header .tmpl-header_head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4.3rem;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    border-bottom: 1px solid #363636;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#tmpl-header .tmpl-header_inner {
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+#tmpl-header a {
+    text-decoration: none !important;
+}
+
+#tmpl-header .tmpl-header_logo {
+    width: 108px;
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+#tmpl-header .tmpl-header_logo>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 24px 0;
+}
+
+.tmpl-header-logo-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.tmpl-header-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.tmpl-header-nav li {
+    list-style: none;
+}
+
+#tmpl-header .tmpl-headerNavItem_label,
+#tmpl-header .tmpl-headerNavItem_home {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    line-height: 1;
+    padding: 1.6rem 0.6rem;
+    cursor: pointer;
+    position: relative;
+    margin: 0 !important;
+}
+
+.tmpl-headerNavItem {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.tmpl-headerNavItem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.tmpl-headerNavItem:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
